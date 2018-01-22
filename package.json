@@ -2,6 +2,9 @@
   "fitbit": {
     "appType": "app",
     "appDisplayName": "HR-Meter",
-    "wipeColor": "#e91e63"
+    "wipeColor": "#e91e63",
+    "requestedPermissions": [
+      "access_heart_rate"
+    ]
   }
 }
