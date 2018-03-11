@@ -5,6 +5,10 @@
     "wipeColor": "#e91e63",
     "requestedPermissions": [
       "access_heart_rate"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
     ]
   }
 }
