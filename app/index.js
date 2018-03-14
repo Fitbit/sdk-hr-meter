@@ -1,8 +1,6 @@
 let document = require("document");
 import { HeartRateSensor } from "heart-rate";
 
-console.log("HR Meter app starting!");
-
 // Fetch UI elements we will need to change
 let hrLabel = document.getElementById("hrm");
 let updatedLabel = document.getElementById("updated");
@@ -11,7 +9,7 @@ let updatedLabel = document.getElementById("updated");
 let lastValueTimestamp = Date.now();
 
 // Initialize the UI with some values
-hrLabel.text = "-";
+hrLabel.text = "--";
 updatedLabel.text = "...";
 
 // This function takes a number of milliseconds and returns a string
@@ -49,5 +47,5 @@ hrm.onreading = function() {
 // Begin monitoring the sensor
 hrm.start();
 
-// And update the display every .5s
-setInterval(updateDisplay, 500);
+// And update the display every second
+setInterval(updateDisplay, 1000);
