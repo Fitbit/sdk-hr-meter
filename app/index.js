@@ -36,7 +36,7 @@ function updateDisplay() {
 // Create a new instance of the HeartRateSensor object
 var hrm = new HeartRateSensor();
 
-// Declare a even handler that will be called every time a new HR value is received.
+// Declare an event handler that will be called every time a new HR value is received.
 hrm.onreading = function() {
   // Peek the current sensor values
   console.log("Current heart rate: " + hrm.heartRate);
